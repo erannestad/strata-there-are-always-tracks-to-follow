@@ -1,0 +1,44 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: black;
+    --secondary-color: magenta;
+    --margin: 18px;
+}
+
+html *{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	margin: var(--margin);
+}
+
+header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+/*	background-color: grey;*/
+/*	padding: 12px;*/
+}
+
+nav.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div {
+	display: inline-block;
+}
+
+a {
+    color: black;
+    underline: none;
+    text-decoration: none;
+}
+
+main {
+	min-height: 100%;
+	background-color: grey;
+}
