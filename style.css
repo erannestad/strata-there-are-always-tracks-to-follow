@@ -76,6 +76,10 @@ section{
     position: relative;
 }
 
+section.top-margin-large {
+	margin-top: calc(var(--margin) * 4);
+}	
+
 .border-bottom{
 	border-bottom: solid var(--border-width) var(--border-color);
 }
@@ -158,6 +162,18 @@ figure.align-top {
 }
 
 
+.constrain-carousel-width {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	position: absolute;
+}
+
+.card-image {
+	text-align: center;
+}
+
+
 /*****************/
 /*  TYPOGRAPHY   */
 
@@ -170,13 +186,26 @@ h1:last-child,h2:last-child,h3:last-child, p:last-child {
 }
 
 
+
 /*****************/
 /*  BREAKPOITNS  */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+
+	.hide-on-mobile {
+		display: none !important;
+	}
+
 	.col-2 {
         display: flex;
         flex-direction: column;
+	}
+	.constrain-carousel-width {
+		display: block;
+		visibility: visible;
+		width: auto;
+		height: auto;
+		position: relative;
 	}
 }
 

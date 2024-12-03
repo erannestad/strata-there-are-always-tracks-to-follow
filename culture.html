@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STRATA</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.0/cdn/shoelace-autoloader.js"></script>
 </head>
 <body>
     <header>
@@ -29,8 +31,106 @@
         </nav>
     </header>
     <main>
-        <section class='full-height'>
-            
+        <section class="border-bottom top-margin-large">
+            <div class="col col-2">
+                <div class="justify-bottom">
+                    <h1>Culture</h1>
+                    <figure class="align-bottom">
+                        <img style="max-width: 400px;" src="static/culture/block-type.jpg">
+                        <figcaption>Lead block type from Harvard's printing press that printed the Eliot Indian Bible, the first bible printed in North America and first to be translated to the Algonquin language.</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <p>The Harvard Indian College was founded due to financial support from the Society for the Propogation of the Gospel in New England, a Christian missionary organization that sought to “Christianize” indigenous youth and housed a printing press that printed the first bible on the North American continent. These bibles, became known as the Eliot Indian Bibles, and were a translation of the new and old testament to the Algonquin language. Lead block type from this printing press was found in the depths of the excavation site, and linked to the printing of the Genesis section of these bibles. </p>
+
+                    <p>This object, a small piece of lead type, holds the history of a colonial project that would seek to co-opt religion as a mechanism of assimilation and control. Of course, schooling of indigenous youth by the State would continue into the 20th century as a fundamental mechanism of the colonial project. The establishment of the residential school system in Canada, and Indian School System in the United States, would be the formal mechanisms by which the State would force assimilation of indigenous youth. </p>
+
+                    <p>Borrowing from systems in the United States, Canada created an Indian residential school system in 1876. This state-sanctioned system was administered by various Christian churches and designed to isolate Indigenous children from the influence of their own culture and religion in order to assimilate them into the dominant Euro-Canadian culture. The residential school system harmed Indigenous children by removing them from their families, depriving them of their ancestral languages, and exposing many of them to physical and sexual abuse. </p>
+
+                    <p>The Harvard Indian College, and type from the Eliot Indian Bible, mark 17th century forces of religion and education as components that would soon be weaponized against the North American Indigenous population.</p>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <div class="col col-2">
+                <div class="justify-bottom">
+                    <h3>Narratives</h3>
+                </div>
+                <div>
+                    <p>The installation integrates a web-based augmented reality (webAR) experience of a swirling mass of archived objects from the dig site and contemporary artifacts. The artwork challenges traditional methods of historical interpretation and invites viewers to engage with layers of historical and contemporary artifacts.</p>
+                </div>
+            </div>
+        </section>
+        <section style="padding-bottom: calc(var(--margin) * 4);" class="full-width border-bottom">
+
+            <!-- CARDS (DESKTOP) -->
+            <div class="col col-2 hide-on-mobile">
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/culture/cards/ceremony.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/culture/cards/ceremony.jpg">View this Card</a></sl-button>
+                </sl-card>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/culture/cards/devils-club.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/culture/cards/devils-club.jpg">View this Card</a></sl-button>
+                </sl-card>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/culture/cards/indian-act.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/culture/cards/ceremony.jpg">View this Card</a></sl-button>
+                </sl-card>
+            </div>
+            <!-- CAROUSEL (MOBILE)  -->
+            <sl-carousel class="scroll-hint aspect-ratio constrain-carousel-width" style="--scroll-hint: 10%; --aspect-ratio: 8.5/11;" pagination navigation mouse-dragging loop slides-per-page="1" slides-per-move="1">
+              <sl-carousel-item>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/culture/cards/indian-act.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/culture/cards/ceremony.jpg">View this Card</a></sl-button>
+                </sl-card>
+              </sl-carousel-item>
+              <sl-carousel-item>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/culture/cards/devils-club.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/culture/cards/devils-club.jpg">View this Card</a></sl-button>
+                </sl-card>
+              </sl-carousel-item>
+              <sl-carousel-item>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/culture/cards/ceremony.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/culture/cards/ceremony.jpg">View this Card</a></sl-button>
+                </sl-card>
+              </sl-carousel-item>
+            </sl-carousel>
+
+     
         </section>
     </main>
     <footer>

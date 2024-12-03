@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STRATA</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.0/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.0/cdn/shoelace-autoloader.js"></script>
 </head>
 <body>
     <header>
@@ -29,8 +31,106 @@
         </nav>
     </header>
     <main>
-        <section class='full-height'>
-            
+        <section class="border-bottom top-margin-large">
+            <div class="col col-2">
+                <div class="justify-bottom">
+                    <h1>Built Environment</h1>
+                    <figure class="align-bottom">
+                        <img style="max-width: 400px;" src="static/built-env/brick.jpg">
+                        <figcaption>Red Clay Brick with Handprint</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <p>The concept of the Anthropocene refers to the first geological epoch defined by the impacts of human activity. However, these effects are not limited to physical or geological consequences; they also have intangible implications that are difficult to measure scientifically but are evident from a sociological perspective. This new geological stratum includes physical remnants of ideologies, political agendas, and economic projects that shape the built and natural environments.</p>
+
+                    <p>During the archaeological excavation at Harvard Yard, a 17th-century brick was uncovered, likely part of an ornamental structure supporting a column. Its location and materiality directly connect to the now-lost Indian College building. Alongside this historical find, traces of more contemporary elements emerged, revealing how human occupation transforms the subsoil in uncontrolled ways. Cases like the Indian College are directly linked to large-scale contemporary infrastructures that disrupt ecosystems and affect the ways of life of both human and non-human communities. An example of this dynamic is the Coastal GasLink pipeline in British Columbia, illustrating how such interventions shape a new stratum of human-induced alterations on a bigger scale.</p>
+
+                    <p>While these transformations have significant physical repercussions, they are deeply intertwined with broader agendas: religious and political ideologies, hegemonic education models, resource extraction systems, and energy production networks, among others. The brick serves as a metaphor for the built environment and the physical and ideological planning that underpins it. Like pipelines and other infrastructures, the graphical records of these plans not only guide construction but, from a critical perspective, reflect the Western drive to impose itself upon what already exists.</p>
+
+                    <p>Many of the bricks from the Indian College were reused in the construction of the old Stoughton Hall. After its demolition, these same materials were likely repurposed again, becoming part of the current campus landscape. This cycle of material reuse highlights not only the continuity of physical transformations but also the ideological narratives that sustain these processes.</p>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <div class="col col-2">
+                <div class="justify-bottom">
+                    <h3>Narratives</h3>
+                </div>
+                <div>
+                    <p>The installation integrates a web-based augmented reality (webAR) experience of a swirling mass of archived objects from the dig site and contemporary artifacts. The artwork challenges traditional methods of historical interpretation and invites viewers to engage with layers of historical and contemporary artifacts.</p>
+                </div>
+            </div>
+        </section>
+        <section style="padding-bottom: calc(var(--margin) * 4);" class="full-width border-bottom">
+
+            <!-- CARDS (DESKTOP) -->
+            <div class="col col-2 hide-on-mobile">
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/built-env/cards/pipeline.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/built-env/cards/pipeline.jpg">View this Card</a></sl-button>
+                </sl-card>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/built-env/cards/sediment.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/built-env/cards/sediment.jpg">View this Card</a></sl-button>
+                </sl-card>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/built-env/cards/toxicology.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/built-env/cards/toxicology.jpg">View this Card</a></sl-button>
+                </sl-card>
+            </div>
+            <!-- CAROUSEL (MOBILE)  -->
+            <sl-carousel class="scroll-hint aspect-ratio constrain-carousel-width" style="--scroll-hint: 10%; --aspect-ratio: 8.5/11;" pagination navigation mouse-dragging loop slides-per-page="1" slides-per-move="1">
+              <sl-carousel-item>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/built-env/cards/pipeline.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/built-env/cards/pipeline.jpg">View this Card</a></sl-button>
+                </sl-card>
+              </sl-carousel-item>
+              <sl-carousel-item>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/built-env/cards/sediment.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/built-env/cards/sediment.jpg">View this Card</a></sl-button>
+                </sl-card>
+              </sl-carousel-item>
+              <sl-carousel-item>
+                <sl-card class="card-image">
+                  <img
+                    style="mix-blend-mode: darken;"
+                    slot="image"
+                    src="static/built-env/cards/toxicology.jpg"
+                    alt="Wetsuweten Research Card"
+                  />
+                  <sl-button size="medium" pill><a href="static/built-env/cards/toxicology.jpg">View this Card</a></sl-button>
+                </sl-card>
+              </sl-carousel-item>
+            </sl-carousel>
+
+     
         </section>
     </main>
     <footer>
