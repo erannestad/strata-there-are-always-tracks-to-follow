@@ -5,7 +5,7 @@
     --margin: 18px;
     --border-color: black;
     --border-width: 1px;
-
+    --primary-font: "Cardo", serif;
 }
 
 html *{
@@ -183,6 +183,19 @@ h1:first-child,h2:first-child,h3:first-child, p:first-child {
 
 h1:last-child,h2:last-child,h3:last-child, p:last-child {
 	margin-bottom: 0;
+}
+
+p {
+
+}
+
+body {
+	font-family: "Cardo";
+	font-size: 18px;
+}	
+
+h1 {
+	font-size: 36px;
 }
 
 
